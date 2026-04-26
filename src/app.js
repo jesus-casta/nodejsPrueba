@@ -11,17 +11,22 @@ app.get('/', (req, res) => {
   res.json({
     app: 'Soporte Informático API',
     rutas: [
-      '/dashboard',
-      '/equipos',
-      '/equipos/:id',
-      '/equipos/nuevo',
-      '/equipos/editar/:id',
-      '/empleados',
-      '/empleados/:id',
-      '/tickets-soporte',
-      '/tickets-soporte/:id',
-      '/historial-o-logs',
-      '/configuracion-o-perfil'
+      'GET /dashboard',
+      'GET /equipos',
+      'GET /equipos/:id',
+      'POST /equipos',
+      'PUT /equipos/:id',
+      'DELETE /equipos/:id',
+      'GET /empleados',
+      'GET /empleados/:id',
+      'POST /empleados',
+      'PUT /empleados/:id',
+      'DELETE /empleados/:id',
+      'GET /tickets-soporte',
+      'GET /tickets-soporte/:id',
+      'POST /tickets-soporte',
+      'PUT /tickets-soporte/:id',
+      'DELETE /tickets-soporte/:id'
     ]
   });
 });
