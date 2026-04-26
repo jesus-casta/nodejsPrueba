@@ -1,0 +1,28 @@
+[
+  {
+    "id_equipo_mysql": 1,
+    "asunto": "Batería hinchada",
+    "descripcion": "La parte trasera del equipo está deformada y requiere revisión urgente.",
+    "prioridad": "Crítica",
+    "estado": "Cerrado",
+    "metadatos_tecnicos": {
+      "salud_bateria": "15%",
+      "ciclos_carga": 1200,
+      "codigo_error_bios": "BAT_WARN_01"
+    },
+    "fecha_creacion": "2024-02-28T14:20:00.000Z"
+  },
+  {
+    "id_equipo_mysql": 2,
+    "asunto": "Pérdida intermitente de red",
+    "descripcion": "El switch pierde conectividad cada 10 minutos bajo carga de tráfico.",
+    "prioridad": "Alta",
+    "estado": "En Proceso",
+    "metadatos_tecnicos": {
+      "version_os": "15.2(7)E5",
+      "ultimo_reinicio": "2026-03-20T07:45:00.000Z",
+      "log_evento": "link-flap"
+    },
+    "fecha_creacion": "2026-03-21T09:00:00.000Z"
+  }
+]
