@@ -151,3 +151,8 @@ Pendiente de despliegue: **REEMPLAZAR_POR_URL_DE_VERCEL**
 - Se utiliza **Sequelize** como ORM para MySQL.
 - Se utiliza **Mongoose** como ODM para MongoDB.
 - Se implementa CRUD completo para 2 tablas MySQL (`equipos`, `empleados`) y 1 colección Mongo (`tickets_soporte`).
+
+## 10) Revisión de contenido y nomenclatura
+
+- Se revisaron rutas, controladores y documentación para mantener una redacción neutral y centrada en el dominio de soporte informático.
+- Se recomienda ejecutar auditorías de texto periódicas en el repositorio para evitar referencias de marca no relacionadas con el producto.
