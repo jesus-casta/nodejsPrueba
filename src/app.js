@@ -10,6 +10,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.json({
     app: 'Soporte Informático API',
+    version_unificada: 'v1.1.0',
+    frontend_objetivo: 'Next.js',
     rutas: [
       '/dashboard',
       '/equipos',
@@ -21,8 +23,21 @@ app.get('/', (req, res) => {
       '/tickets-soporte',
       '/tickets-soporte/:id',
       '/historial-o-logs',
-      '/configuracion-o-perfil'
+      '/configuracion-o-perfil',
+      '/version'
     ]
+  });
+});
+
+app.get('/version', (req, res) => {
+  res.json({
+    version_unificada: 'v1.1.0',
+    backend: 'Node.js + Express',
+    frontend: 'Next.js',
+    persistencia: {
+      mysql: 'AWS RDS (via MYSQL_URI)',
+      mongo: 'AWS DocumentDB/Atlas (via MONGO_URI)'
+    }
   });
 });
 
