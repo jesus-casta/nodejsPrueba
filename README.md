@@ -2,6 +2,25 @@
 
 Aplicación backend full-stack orientada a la gestión de inventario de equipos, empleados y tickets de soporte técnico.
 
+
+## Estado de unificación (v1.1.0)
+
+La API queda estandarizada en **una única versión funcional (`v1.1.0`)** para integrarse con un frontend en **Next.js** y mantener base de datos en **AWS**.
+
+### Variables recomendadas para AWS
+
+```env
+PORT=3000
+MYSQL_URI=mysql://USER:PASSWORD@<rds-endpoint>:3306/soporte_informatico
+MONGO_URI=mongodb://USER:PASSWORD@<documentdb-o-atlas-endpoint>:27017/soporte_informatico
+NEXT_PUBLIC_API_URL=https://<tu-api>
+```
+
+### Verificación rápida
+
+- `GET /` muestra metadatos de versión unificada.
+- `GET /version` confirma stack objetivo: Next.js + persistencia AWS (RDS/DocumentDB o Atlas).
+
 ## 1) Funcionalidad de la aplicación
 
 Permite:
@@ -132,3 +151,8 @@ Pendiente de despliegue: **REEMPLAZAR_POR_URL_DE_VERCEL**
 - Se utiliza **Sequelize** como ORM para MySQL.
 - Se utiliza **Mongoose** como ODM para MongoDB.
 - Se implementa CRUD completo para 2 tablas MySQL (`equipos`, `empleados`) y 1 colección Mongo (`tickets_soporte`).
+
+## 10) Revisión de contenido y nomenclatura
+
+- Se revisaron rutas, controladores y documentación para mantener una redacción neutral y centrada en el dominio de soporte informático.
+- Se recomienda ejecutar auditorías de texto periódicas en el repositorio para evitar referencias de marca no relacionadas con el producto.
